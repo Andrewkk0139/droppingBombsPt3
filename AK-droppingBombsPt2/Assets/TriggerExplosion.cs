@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class TriggerExplosion : MonoBehaviour
 {
-    [Header("Explosion parts")]
+    [Header("Explosion Parts")]
     public GameObject explosion;
 
-    private void OnCollosionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         Instantiate(explosion, transform.position, transform.rotation);
     }
